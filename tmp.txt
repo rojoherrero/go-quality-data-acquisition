@@ -1,0 +1,7 @@
+docker run -it --name mariadb -p 3306:3306 -v mariadb-volumen:/var/lib/mysql -e MYSQL_DATABASE=mariadb -e MYSQL_USER=mariadb -e MYSQL_PASSWORD=mariadb -e MYSQL_ROOT_PASSWORD=root yobasystems/alpine-mariadb
+
+docker run -it --name postgres -p 5432:5432 -v postgres-volumen:/var/lib/postgresql/data -e POSTGRES_PASSWORD=root -e POSTGRES_USER=root -e POSTGRES_DB=learn postgres:alpine
+
+
+
+
